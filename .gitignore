@@ -1,9 +1,19 @@
-echo "# Chef Infra Automation" >> README.md
-echo ".chef/
+# Chef-specific files and directories
+.chef/
 .kitchen/
 Berksfile.lock
 nodes/
-cookbooks/" >> .gitignore
-git add .
-git commit -m "Initial project setup"
-git push origin main
+cookbooks/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files (e.g., VSCode, JetBrains)
+.vscode/
+.idea/
+*.iml
+
+# Temporary and backup files
+*.bak
+*.swp
