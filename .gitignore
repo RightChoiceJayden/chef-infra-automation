@@ -1,9 +1,9 @@
-.vagrant
-/cookbooks
-
-# Bundler
-bin/*
-.bundle/*
-
+echo "# Chef Infra Automation" >> README.md
+echo ".chef/
 .kitchen/
-.kitchen.local.yml
+Berksfile.lock
+nodes/
+cookbooks/" >> .gitignore
+git add .
+git commit -m "Initial project setup"
+git push origin main
